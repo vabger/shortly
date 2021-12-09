@@ -1,0 +1,32 @@
+.logo__container {
+  display: flex;
+  justify-content: center;
+}
+.logo__backdrop {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+}
+.logo {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contentArea {
+  background-color: white;
+  margin: 20px;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 0px;
+  padding: 40px;
+  padding-top: 60px;
+}
+.heading {
+  color: hsl(260, 8%, 14%);
+}
+.desc {
+  color: hsl(257, 7%, 63%);
+}

@@ -1,0 +1,93 @@
+.Url__comp {
+  margin: 0px 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.Url__full,
+.Url__short {
+  padding: 15px 0px;
+}
+.Url__break {
+  background-color: rgb(241, 238, 238);
+  width: 100%;
+  height: 2px;
+}
+
+.Url__copyButton {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "poppins", sans-serif;
+  background-color: hsl(180, 66%, 49%);
+  font-size: medium;
+  color: white;
+  transition: background-color 200ms;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.Url__copyButton:hover {
+  background-color: hsl(180, 100%, 65%);
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: hsl(180, 66%, 49%);
+}
+.Url__copied {
+  background-color: hsl(257, 27%, 26%);
+}
+.Url__copied:hover {
+  background-color: hsl(258, 33%, 34%);
+}
+
+@media screen and (min-width: 786px) {
+  .Url__comp {
+    display: flex;
+    margin: 20px 15%;
+    margin-top: 0px;
+    padding: 0px 25px;
+    justify-content: space-between;
+    border-radius: 5px;
+    transform: translateY(-60px);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    -o-transform: translateY(-60px);
+  }
+  .Url__break {
+    display: none;
+  }
+  .Url__wrapper {
+    width: 100%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  .Url__copyButton {
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 20px;
+    align-self: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+}

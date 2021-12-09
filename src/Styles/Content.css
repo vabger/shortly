@@ -1,0 +1,86 @@
+.head {
+  margin: 30px 20px;
+  text-align: center;
+  padding: 5px;
+}
+.head__heading {
+  color: hsl(260, 8%, 14%);
+  font-size: 40px;
+}
+.head__desc {
+  color: hsl(257, 7%, 63%);
+  font-size: 20px;
+}
+.connector {
+  margin: auto;
+  width: 10px;
+  height: 50px;
+  background-color: hsl(180, 66%, 49%);
+}
+
+@media screen and (min-width: 786px) {
+  .Card__group {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  .head {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .connector {
+    width: 50px;
+    height: 7px;
+    transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -o-transform: translateY(40px);
+  }
+  .contentArea {
+    text-align: start;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .logo__backdrop {
+    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+  }
+  .Card__group {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .logo__container {
+    justify-content: flex-start;
+  }
+  #two {
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+  }
+  #three {
+    transform: translateY(60px);
+    -webkit-transform: translateY(60px);
+    -moz-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    -o-transform: translateY(60px);
+  }
+}
+
+@media screen and (max-width: 1075px) and (min-width: 786px) {
+  .head {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}

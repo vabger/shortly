@@ -1,0 +1,116 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form__err_msg {
+  padding-left: 38px;
+  padding-top: 3px;
+  font-size: x-small;
+  color: red;
+}
+.form {
+  margin: 20px 15%;
+  margin-top: 50px;
+}
+.form__container {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../images/bg-shorten-desktop.svg");
+  border-radius: 10px;
+  transform: translateY(-60px);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transform: translateY(-60px);
+  -moz-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  -o-transform: translateY(-60px);
+}
+.form__input {
+  margin-top: 35px;
+  padding: 10px;
+  margin-left: 35px;
+  margin-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  border: 2px solid white;
+}
+.form__input:focus {
+  outline: none;
+}
+.form__input::placeholder {
+  color: hsl(257, 7%, 63%);
+}
+.form__err_input::placeholder {
+  color: rgb(248, 103, 103);
+}
+.form__error {
+  border-color: red;
+}
+
+.form__button {
+  width: 16%;
+  margin: 35px;
+  margin-left: 0px;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: medium;
+  border: 0;
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+.form__button:hover {
+  background-color: hsl(180, 100%, 63%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1126px) {
+  .form__input {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 786px) {
+  .form {
+    margin: 20px;
+  }
+  .form__container {
+    padding: 30px;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .form__input {
+    margin: 0;
+    padding: 15px;
+  }
+  .form__err_msg {
+    padding-left: 2px;
+    margin-bottom: 20px;
+  }
+  .form__button {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}

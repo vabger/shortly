@@ -1,0 +1,117 @@
+.nav,
+.sign,
+.linkGroup {
+  display: flex;
+  align-items: baseline;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 1s ease-in;
+  padding-left: 15%;
+  padding-bottom: 15px;
+  -webkit-transition: background-color 1s ease-in;
+  -moz-transition: background-color 1s ease-in;
+  -ms-transition: background-color 1s ease-in;
+  -o-transition: background-color 1s ease-in;
+}
+.links {
+  font-size: 15px;
+  transition: all 200ms;
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  -ms-transition: all 200ms;
+  -o-transition: all 200ms;
+}
+.nav-links {
+  color: rgb(224, 224, 224);
+}
+.active {
+  background-color: hsl(257, 27%, 26%);
+  transition: background-color 0.5s ease-in;
+}
+.activeSvg path {
+  fill: white;
+}
+.nav > .banner__button {
+  font-size: 15px;
+  padding: 10px 15px;
+}
+.menu-img > img {
+  display: none;
+}
+.nav {
+  justify-content: space-between;
+}
+.nav > svg,
+.linkGroup > svg {
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+.drop-down {
+  display: none;
+}
+@media screen and (max-width: 786px) {
+  .linkGroup > a,
+  .sign {
+    display: none;
+  }
+  .nav {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+  }
+  .menu-img > img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .drop-down {
+    position: fixed;
+    left: 10%;
+    width: 70%;
+    display: flex;
+    z-index: 100;
+    text-align: center;
+    transform-origin: top;
+    transition: transform 0.5s;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px 30px;
+    padding-bottom: 50px;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -ms-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+  }
+  .drop-down > .Url__break {
+    background-color: rgb(102, 101, 101);
+  }
+  .drop-down > a,
+  .drop-down > button {
+    font-size: 20px;
+  }
+  .drop-down > a {
+    width: fit-content;
+    padding: 10px;
+    color: white;
+  }
+  .drop-down > button {
+    width: 70%;
+    margin-top: 0px;
+  }
+}
